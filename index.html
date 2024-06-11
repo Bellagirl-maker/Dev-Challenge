@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT Skills Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero-section">
+        <header class="nav-one"> 
+            <nav class="navbar">
+            <a href="#" class="logo"><img src="/Assets/logo.png" alt="logo"/></a>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <div class="nav-links">
+            <a href="#history">01. HISTORY</a>
+            <a href="#team">02. TEAM</a>
+            </nav>
+            </div>
+        </header>
+        <header class="nav-two">
+            <nav class="navbar-two">
+                <div class="logo-two">
+                 <a href="#"><img src="/Assets/logo.png" class="logo_two" alt="logo"/></a>
+                 <a href="#"><img src="/Assets/logo-text.png" class="logo-text" /></a>
+                </div>
+               <div class="nav2-links">
+                 <a href="#history">01. HISTORY</a>
+                 <a href="#team">02. TEAM</a>
+             </div>
+            </nav>
+        </header> 
+</section>
+
+<!--  History Section -->
+<section class="history" id="history">
+    <div class="history-data">
+        <img class="history-title" src="/Assets/01-title.png" alt="01-title" width="180" height="120" />
+        <p class="history-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Felis imperdiet proin fermentum leo vel orci porta non. Diam in arcu cursus euismod quis viverra. Dignissim convallis aenean et tortor.</p>
+    </div>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="/Assets/first-carousel-image.png" alt="first-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/second-carousel-image.png" alt="second-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/first-carousel-image.png" alt="first-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/second-carousel-image.png" alt="second-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/first-carousel-image.png" alt="first-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/second-carousel-image.png" alt="second-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/first-carousel-image.png" alt="first-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/second-carousel-image.png" alt="second-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/first-carousel-image.png" alt="first-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/second-carousel-image.png" alt="second-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/first-carousel-image.png" alt="first-carousel-image" width="240" height="130" /></div>
+        <div class="item"><img src="/Assets/second-carousel-image.png" alt="second-carousel-image" width="240" height="130" /></div>
+    </div>
+</section>
+
+<!-- Climb Section -->
+<section class="climb" id="team">
+    <div class="climb-data">
+        <img class="climb-img" src="/Assets/02-title.png" alt="02-title" width="180" height="120" />
+        <p class="climb-text">Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Proin sed libero enim sed faucibus. Adipiscing commodo elit at imperdiet dui accumsan.</p>
+    </div>
+</section>
+
+<!-- Schedule Section --->
+<section class="schedule">
+<nav class="schedule-navbar">
+    <button class="tab-button active" onclick="openTab('tab1')">MOUNTAIN 1</button>
+    <button class="tab-button" onclick="openTab('tab2')">MOUNTAIN 2</button>
+</nav>
+<div class="schedule-section">
+    <div id="tab1" class="tab-content active">
+        <img src="/Assets/schedule-1.png" alt="schedule-1" />   
+    </div>
+    <div id="tab2" class="tab-content">
+        <img src="/Assets/schedule-2.png" alt="schedule-2" />
+    </div>
+</div>
+</section>
+
+<!-- Accordion for mobile -->
+<section class="m-accordion">
+<div class="accordion">
+    <button class="accordion-button active" data-tab="tab1">MOUNTAIN 1</button>
+    <div class="accordion-content">
+        <!-- Content for Tab 1 -->
+        <img src="/Assets/schedule-1.png" alt="schedule-1" />
+    </div>
+    <button class="accordion-button" data-tab="tab2">MOUNTAIN 2</button>
+    <div class="accordion-content">
+        <!-- Content for Tab 2 -->
+        <img src="/Assets/schedule-2.png" alt="schedule-2" />
+    </div>
+</div>
+</section>
+
+ <!-- Footer  Section-->
+ <div class="footer">
+    <div class="footer-box">
+        <a class="footer-logo-img" href="#hero">
+            <img class="footer-logo" src="/Assets/footer-logo.png" alt="footer-logo" width="205" height="65" />
+        </a>
+        <div class="copyright">
+            COPYRIGHT 2016. ALL RIGHTS RESERVED.
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+</body>
+</html>
