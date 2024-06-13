@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header.nav-one {
+    background-image: url("Assets/hero-image-top.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    position: absolute; 
+    top: 1.25rem; 
+    right: 12.5rem; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 30rem; 
+}
+
+.navbar a {
+    font-size: 1rem;
+    margin-left: 4rem;
+    font-weight: 600;
+    color: #fff
+}
+
+.nav-links {
+    font-style: italic;
+} 
+
+#menu-icon {
+    font-size: 1.6rem;
+    color: #3c4559;
+    display: none;
+    cursor: pointer;    
+}
+
+.navbar-two {
+    position: absolute; 
+    background: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9.5rem;
+
+}
+
+.navbar-two a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3c4559;
+}
+
+.logo-two {
+    display: flex;
+    align-items: center; 
+}
+
+.logo-text {
+    margin-left: 1rem; 
+}
+
+div.nav2-links a {
+    margin-right: 4rem;
+}
+
+.history {
+    background-image: url("/Assets/history-bg.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.history-data {
+    padding: 4rem 10rem;
+    margin-bottom: 15rem;
+}
+
+.owl-carousel {
+    background-color: rgba(60, 69, 89, 0.7);
+}
+
+.owl-theme {
+    padding: 2rem 10rem;
+    margin-top: 1rem;
+}
+
+
+.climb-data {
+    display: flex;
+    padding: 2rem 10rem;
+}
+
+p.climb-text {
+    padding-top: 2rem;
+    margin-left: 1rem;
+}
+
+.schedule-navbar {
+    display: flex;
+    background-color: #3c4559;
+    padding-left: 8rem;
+}
+
+.schedule-section {
+    background: url(/Assets/schedule.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.tab-button.active {
+    background-color: #d5dce4;
+    color: #3c4559;
+    font-weight: 700;
+    border-bottom: 2px solid #3c4559 ;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    padding: 4rem 10rem;
+}
+
+.accordion {
+    display: none;
+}
+
+.footer {
+    background: #3c4559;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10rem
+}
+
+.copyright {
+    color: #63739b;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+/* Media Queries for mobile screens */
+@media only screen and (max-width: 768px) {
+
+    header.nav-one {
+        padding: 1rem; 
+        background-position: center;   
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+      }
+    
+      .logo {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    
+      #menu-icon {
+        display: block;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    
+      .nav-links {
+        display: none;
+      }
+    
+      .nav-links a {
+        display: block;
+        padding: 0.5rem 0;
+        text-align: center;
+      }
+    
+    .navbar-two {
+      padding: 0.5rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav2-links {
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+  
+    .nav2-links a {
+      margin: 0.5rem 0;
+    }
+  
+  
+    .history-data {
+        padding: 5rem 2rem;
+    }
+
+    .climb-data {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .history-text,
+    .climb-text {
+      font-size: 0.9rem;
+    }
+
+    .owl-theme,
+    .climb-data,
+    .tab-content {
+      padding: 3rem;
+    }
+
+    .tab-button {
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+    .schedule-navbar {
+        display: none;
+      }
+    
+    .schedule {
+        display: none;
+    }
+    
+    .accordion {
+        display: block;
+    }
+
+    .accordion-button {
+        background-color: #f1f1f1;
+        color: #333;
+        cursor: pointer;
+        padding: 1rem;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: background-color 0.3s;
+    }
+
+    .accordion-button.active {
+        background-color: #ddd;
+    }
+
+    .accordion-content {
+        display: none;
+        padding: 1rem;
+    }
+
+    .accordion-content.active {
+        display: block;
+    }
+      .footer-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+      }
+    
+      .copyright {
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+    }
+  
+  
+  /* Media Queries for tablet screens */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        z-index: 1000;
+    }
+  
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2rem;
+    }
+  
+    .navbar-two {
+      padding: 1rem;
+    }
+  
+    .nav2-links {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .history-data,
+    .owl-theme,
+    .climb-data,
+    .tab-content  {
+      padding: 2rem 4rem;
+    }
+
+    .schedule-section {
+        display: block;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+  }
+
+ 
